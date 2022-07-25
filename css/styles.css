@@ -218,7 +218,7 @@ ul {
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	width: 528px;
@@ -229,7 +229,6 @@ ul {
 	transform: translate(-50%, -50%) scale(1);
 	transition: opacity 1050ms cubic-bezier(0.4, 0, 0.2, 1);
 	padding: 40px;
-	z-index: 10;
 }
 .modal > span {
 	font-size: 35px;
@@ -378,7 +377,10 @@ ul {
 	height: 100%;
 }
 .svg-close:hover,
-.svg-close:focus {
+.svg-close:focus,
+.close:focus,
+.close:focus use {
+	outline: none;
 	fill: var(--color-akcent);
 }
 .visually-hidden {
@@ -678,8 +680,11 @@ ul {
 
 /* ------------------------------------------------styles footer----------------------------- */
 .footer {
+	position: relative;
 	background-color: var(--secondary-backgraund);
 	padding: 72px 0px;
+	z-index: -2;
+	
 }
 
 .footer-linkname {
@@ -786,10 +791,13 @@ ul {
 	margin-bottom: 20px;
 }
 .subscription-contact {
+	position: relative;
 	display: flex;
 	gap: 12px;
+	z-index: -1;
 }
 .subscription-input {
+	position: relative;
 	display: block;
 	padding: 15px;
 	background: var(--secondary-backgraund);
@@ -802,6 +810,7 @@ ul {
 	font-size: 16px;
 	line-height: calc(20 / 16);
 	letter-spacing: 0.03em;
+
 }
 
 .subscription-input:focus-visible {
