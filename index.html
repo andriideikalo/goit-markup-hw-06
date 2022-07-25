@@ -57,35 +57,34 @@
 				<div class="container">
 					<h1 class="herro-title">Эффективные решения для вашего бизнеса</h1>
 					<button type="button" class="herro-bth" data-modal-open >Заказать услугу</button>
-					<div class="backdrop" data-modal>
-						<div  class="is-hidden modal" > 
+					<div class="backdrop is-hidden" data-modal>
+						<div  class="modal" > 
 							<h2 class="title-modal"> Оставьте свои данные, мы вам перезвоним</h2>
-							<form action="" name="signum-form" autocomplete="on" class="form-input">
-								<label class="name-input">Имя
-									<div class="username">
+							<form name="signum-form" autocomplete="on" class="form-input">
+								<div class="username">
+									<label class="name-input">Имя
 										<input type="text" name="username" class="form-input-area" placeholder="введите ваше имя">
 										<svg width="18" height="18" class="modal-icon">
 										<use href="./images/icons.svg#person-black"></use>
 										</svg>
-									</div>
 									</label>
-									
-								<label class="name-input">Телефон
-									<div class="username">
-									<input type="tel" name="tel" class="form-input-area" title="+38(000)111 11 11" placeholder="введите номер телефона">
-									<svg width="18" height="18" class="modal-icon">
-									<use href="./images/icons.svg#phone-black"></use>
-									</svg>
 								</div>
-								</label>
-								<label for="" class="name-input">E-mail
-									<div class="username">
-									<input type="email" name="email" class="form-input-area" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="введите E-mail">
-								<svg width="18" height="18" class="modal-icon">
-									<use href="./images/icons.svg#email-black"></use>
-								</svg>
+								<div class="username">
+									<label class="name-input">Телефон
+										<input type="tel" name="tel" class="form-input-area" title="+38(000)111 11 11" placeholder="введите номер телефона">
+										<svg width="18" height="18" class="modal-icon">
+										<use href="./images/icons.svg#phone-black"></use>
+										</svg>
+									</label>
 								</div>
-								</label>
+								<div class="username">
+									<label class="name-input">E-mail
+										<input type="email" name="email" class="form-input-area" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="введите E-mail">
+										<svg width="18" height="18" class="modal-icon">
+										<use href="./images/icons.svg#email-black"></use>
+										</svg>
+									</label>
+								</div>
 								<label class="name-input">Коментарий
 									<textarea placeholder="Введите текст" rows="5" class="form-input-area feedback"></textarea>
 
@@ -365,7 +364,7 @@
 				<section class="footer-subscription">
 					<h2 class="subscription-title">Подпишитесь на рассылку</h2>
 					<div class="subscription-contact">
-						<input type="email" name="email" class="subscription-input" for="input" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"></input>
+						<input type="email" name="email" class="subscription-input" for="input" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
 						<button type="button" class="subscription-btn">Подписаться
 							<svg class="subscription-icon">
 								<use href="./images/icons.svg#send"></use>
