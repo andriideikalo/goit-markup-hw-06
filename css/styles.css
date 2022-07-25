@@ -288,9 +288,6 @@ ul {
 	margin-bottom: 20px;
 	color: var(--color-primary-text);
 }
-textarea::placeholder {
-	color: var(--color-primary-text);
-}
 .modal-checkbox {
 	display: flex;
 	align-items: center;
