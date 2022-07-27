@@ -59,43 +59,44 @@
 					<button type="button" class="herro-bth" data-modal-open >Заказать услугу</button>
 					<div class="backdrop is-hidden" data-modal>
 						<div  class="modal" > 
-							<h2 class="title-modal"> Оставьте свои данные, мы вам перезвоним</h2>
+							<p class="title-modal"> Оставьте свои данные, мы вам перезвоним</p>
 							<form name="signum-form" autocomplete="on" class="form-input">
 								<div class="username">
-									<label class="name-input">Имя
-										<input type="text" name="username" class="form-input-area" placeholder="введите ваше имя">
+									<label class="name-input"> <span class="name-input-title"> Имя</span>
+										<input type="text" name="username" class="form-input-area" placeholder="введите ваше имя" required>
 										<svg width="18" height="18" class="modal-icon">
 										<use href="./images/icons.svg#person-black"></use>
 										</svg>
 									</label>
 								</div>
 								<div class="username">
-									<label class="name-input">Телефон
-										<input type="tel" name="tel" class="form-input-area" title="+38(000)111 11 11" placeholder="введите номер телефона">
+									<label class="name-input"><span class="name-input-title">Телефон</span>
+										<input type="tel" name="tel" class="form-input-area" title="+38(000)111 11 11"  placeholder="введите номер телефона" required>
 										<svg width="18" height="18" class="modal-icon">
 										<use href="./images/icons.svg#phone-black"></use>
 										</svg>
 									</label>
 								</div>
 								<div class="username">
-									<label class="name-input">E-mail
-										<input type="email" name="email" class="form-input-area" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="введите E-mail">
+									<label class="name-input"><span class="name-input-title">E-mail</span>
+										<input type="email" name="email" class="form-input-area" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="введите E-mail" required>
 										<svg width="18" height="18" class="modal-icon">
 										<use href="./images/icons.svg#email-black"></use>
 										</svg>
 									</label>
 								</div>
-								<label class="name-input">Коментарий
+								<label class="name-input"><span class="name-input-title">Коментарий</span>
 									<textarea placeholder="Введите текст" rows="5" class="form-input-area feedback"></textarea>
 
 								</label>
-							</form>	
 							<div class="modal-checkbox">
-								<input type="checkbox" class="custom-checkbox" id="checkbox" name="checkbox">
+								<input  type="checkbox" class="custom-checkbox" id="checkbox" name="checkbox" required>
 								<label for="checkbox" class="checkbox-accept"></label>
 								<p class="checkbox-accept">Соглашаюсь с рассылкой и принимаю <span class="link-dogovor">&nbsp;Условия договора</span></p>
 							</div>
-							<button type="button" class="modal-send-btn">отправить</button>
+							<button type="submit" class="modal-send-btn">отправить</button>
+							</form>	
+							
 								<button class="close" data-modal-close ><svg width="18" height="18" class="svg-close" >
 									<use href="./images/icons.svg#close"></use>
 								</svg></button>
@@ -344,7 +345,7 @@
 						</section>
 				</div>
 			
-				<section class="footer-section-social">
+				<div class="footer-section-social">
 					<h2 class="footer-title-social">Присоединяйтесь</h2>
 					<ul class="footer-list-social">
 						<li class="footer-social"><a href="" class="footer-link-social"><svg class="footer-icon">
@@ -360,18 +361,18 @@
 							<use href="./images/icons.svg#linkedin1"></use>
 						</svg></a></li>
 					</ul>
-				</section>
-				<section class="footer-subscription">
-					<h2 class="subscription-title">Подпишитесь на рассылку</h2>
-					<div class="subscription-contact">
+				</div>
+				<div class="footer-subscription">
+					<p class="subscription-title">Подпишитесь на рассылку</p>
+					<form class="subscription-contact">
 						<input type="email" name="email" class="subscription-input" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
-						<button type="button" class="subscription-btn">Подписаться
+						<button type="submit" class="subscription-btn">подписаться
 							<svg class="subscription-icon">
 								<use href="./images/icons.svg#send"></use>
 							</svg>
 						</button>
-					</div>
-				</section>
+					</form>
+				</div>
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>
